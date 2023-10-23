@@ -1,0 +1,225 @@
+/* variables */
+:root{
+    --prim: #005a9c;
+    --sec: #f00;
+    --tert: #f5f5f5;
+    --font: 'Bricolage Grotesque', arial, sans-serif;
+}
+
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--tert);
+}
+
+.inner{
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* header */
+.header{
+    padding: 10px 0;
+    width: 100%;
+    background-color: var(--prim);
+    height: 90px;
+}
+
+h1, .top-nav{
+    width: 50%;
+    float: left;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3.5em; 
+    /* the unit em is not required when using float. It is just another way to size up or down an element. */
+    text-transform: capitalize;
+}
+
+.logo{
+    color: var(--sec);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.top-nav{
+    margin-top: 48px;
+}
+
+.nav-list{
+    margin: 0;
+    padding-left: 0;
+    text-align: right;
+    list-style-type: none;
+}
+
+.nav-list li{
+    display: inline;
+    padding: 0 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-right: 1px solid var(--tert);
+}
+
+.nav-list li:last-child{
+    padding-right: 0;
+    border: none;
+}
+
+.nav-list a{
+    color: var(--tert);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.nav-list a:hover{
+    color: var(--sec);
+}
+
+/* main */
+.clear{
+    clear: both;
+}
+
+.section{
+    padding: 40px 0;
+}
+
+h2{
+    margin: 0;
+    color: var(--prim);
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+.section1-content{
+    padding: 10px 12px;
+    /* width: calc(100% / 3.33);  */
+    width: 33.33%;
+    float: left;
+}
+
+.section1-content p{
+    font-weight: 200;
+    /* text-align: center; */
+    line-height: 2;
+}
+
+.dat-figure{
+    margin: 20px auto;
+    width: 660px;
+}
+
+.dat-figure img{
+    display: block;
+    margin: 0 auto;
+}
+
+.dat-figure figcaption{
+    color: var(--sec);
+    font-size: 14px;
+    font-style: italic;
+}
+
+.section2-content{
+    padding: 20px 12px;
+    float: left;
+    width: calc(100%/2);
+}
+
+.section2-content h3{
+    margin: 0;
+    color: var(--sec);
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.section2-content p{
+    font-weight: 200;
+    line-height: 2;
+}
+
+/* footer */
+.colophon{
+    color: var(--prim);
+    text-align: center;
+}
+
+/* ---------------about page------------------ */
+
+#mainAbout{
+    padding: 50px 0;
+}
+
+.about-h2, .contact-h2{
+    font-size: 64px;
+    font-weight: 200;
+    color: var(--sec);
+    text-transform: uppercase;
+}
+
+.about-section{
+    padding: 15px 0;
+}
+
+.about-text{
+    border: 2px solid red;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 60px; 
+    /* we will take this right margin out if we need to */
+    font-size: 18px;
+    line-height: 1.5;
+    width: 60%;
+}
+
+.about-img{
+    display: block;
+    width: 200px;
+    height: auto;
+    float: right;
+}
+
+.about-text{
+    float: left;
+}
+/* float text to left after floating img to right.....why? */
+
+/* ------------contact page------------- */
+#mainContact{
+    padding: 50px 0;
+    height: 75vh;
+}
+
+.contact-text{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.contact-list{
+    margin: 0 auto;
+    padding-left: 0;
+    width: 33.33%;
+    list-style-type: none;
+}
+
+.contact-list li{
+    border: 1px solid var(--prim);
+    padding: 5px 2px;
+}
+
+.contact-list li:first-child{
+    text-transform: capitalize;
+}
+
+.contact-list a{
+    color: var(--sec);
+    text-decoration: none;
+}
+
+
